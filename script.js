@@ -1,8 +1,8 @@
 // Scroll Header
   function scrollBanner() {
     let scrollPos;
-    let head = document.querySelector('#top');
-    let butt = document.querySelector('#top > p');
+    let head = document.querySelector('#home');
+    let butt = document.querySelector('#home > p');
     
     scrollPos = window.scrollY;
 
@@ -122,41 +122,41 @@
   let rN0 = document.querySelector('#n0');
   function cN0() {
     this.parentElement.parentElement.parentElement.classList.remove('oct');
-    window.location = "#top";
+    window.location = "#home";
   }
   rN0.addEventListener('click', cN0);
 
   let rN1 = document.querySelector('#n1');
   function cN1() {
       this.parentElement.parentElement.parentElement.classList.remove('oct');
-      window.location = "#a";
+      window.location = "#about";
   }
   rN1.addEventListener('click', cN1);
 
   let rN2 = document.querySelector('#n2');
   function cN2() {
       this.parentElement.parentElement.parentElement.classList.remove('oct');
-      window.location = "#b";
+      window.location = "#projects";
   }
   rN2.addEventListener('click', cN2);
 
   let rN3 = document.querySelector('#n3');
   function cN3() {
       this.parentElement.parentElement.parentElement.classList.remove('oct');
-      window.location = "#c";
+      window.location = "#pricing";
   }
   rN3.addEventListener('click', cN3);
 
   // let rN4 = document.querySelector('#n4');
   // function cN4() {
   //     this.parentElement.parentElement.parentElement.classList.remove('o-act');
-  //     window.location = "#d";
+  //     window.location = "#blog";
   // }
 
   let rN5 = document.querySelector('#n5');
   function cN5() {
       this.parentElement.parentElement.parentElement.classList.remove('oct');
-      window.location = "#e";
+      window.location = "#contact";
   }
   rN5.addEventListener('click', cN5);
 
@@ -167,21 +167,21 @@
   // document.querySelector('!nav').addEventListener('click', kNa);
 
 // Project actions
-  // let bxa = document.querySelector('#bx0');
-  // function asa() {
-  //   this.children[0].classList.add('emg');
-  //   this.children[1].children[0].classList.add('elb');
-  //   this.children[1].children[1].classList.add('ein');
-  //   this.children[1].children[2].classList.add('etp');
-  // }
-  // function rsa() {
-  //   this.children[0].classList.remove('emg');
-  //   this.children[1].children[0].classList.remove('elb');
-  //   this.children[1].children[1].classList.remove('ein');
-  //   this.children[1].children[2].classList.remove('etp');
-  // }
-  // bxa.addEventListener('mouseleave', rsa);    
-  // bxa.addEventListener('mouseenter', asa);
+  let bxa = document.querySelector('#bx0');
+  function asa() {
+    this.children[0].classList.add('emg');
+    this.children[1].children[0].classList.add('elb');
+    this.children[1].children[1].classList.add('ein');
+    this.children[1].children[2].classList.add('etp');
+  }
+  function rsa() {
+    this.children[0].classList.remove('emg');
+    this.children[1].children[0].classList.remove('elb');
+    this.children[1].children[1].classList.remove('ein');
+    this.children[1].children[2].classList.remove('etp');
+  }
+  bxa.addEventListener('mouseleave', rsa);    
+  bxa.addEventListener('mouseenter', asa);
 
   let bxb = document.querySelector('#bx1');
   function asb() {
@@ -199,21 +199,21 @@
   bxb.addEventListener('mouseleave', rsb);
   bxb.addEventListener('mouseenter', asb);
 
-  // let bxc = document.querySelector('#bx2');
-  // function asc() {
-  //   this.children[0].classList.add('emg');
-  //   this.children[1].children[0].classList.add('elb');
-  //   this.children[1].children[1].classList.add('ein');
-  //   this.children[1].children[2].classList.add('etp');
-  // }
-  // function rsc() {
-  //   this.children[0].classList.remove('emg');
-  //   this.children[1].children[0].classList.remove('elb');
-  //   this.children[1].children[1].classList.remove('ein');
-  //   this.children[1].children[2].classList.remove('etp');
-  // }
-  // bxc.addEventListener('mouseleave', rsc);
-  // bxc.addEventListener('mouseenter', asc);
+  let bxc = document.querySelector('#bx2');
+  function asc() {
+    this.children[0].classList.add('emg');
+    this.children[1].children[0].classList.add('elb');
+    this.children[1].children[1].classList.add('ein');
+    this.children[1].children[2].classList.add('etp');
+  }
+  function rsc() {
+    this.children[0].classList.remove('emg');
+    this.children[1].children[0].classList.remove('elb');
+    this.children[1].children[1].classList.remove('ein');
+    this.children[1].children[2].classList.remove('etp');
+  }
+  bxc.addEventListener('mouseleave', rsc);
+  bxc.addEventListener('mouseenter', asc);
 
   let bxd = document.querySelector('#bx3');
   function asd() {

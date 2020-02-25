@@ -16,7 +16,7 @@
 <body>
 <!-- Landing Page -->
  	<section class="plx">
- 		<header id="top">
+ 		<header id="home">
  			<h1><em id="thin">web</em><em id="thick">Storm</em></h1>
  			<p class="sbt sbt1">Full Stack Web Development</p>
  				<p class="sbt typewrite" data-period="2000" data-type='[ 
@@ -28,14 +28,14 @@
 				"Make it raaaaaaaaiiiiiiiiin;) "]'>
 				<span class="wrap"></span>
 			</p>
- 			<a class="but" href="#a">look inside</a>
+ 			<a class="but" href="#about">look inside</a>
  		</header>
  	</section>
 
 <!-- Navigation Page -->
   <nav>
     <img id="na" class="n-img" src="https://img.icons8.com/wired/64/000000/storm.png">
-    <div class="row pad">
+    <div class="row pad module">
       <a href="#cls" class="clse cnv">&times;</a>
       <div class="col">
         <a id="n0"><h3 class="h3s">Home</h3>
@@ -45,14 +45,11 @@
         <!-- <a id="n4"><h3 class="h3s">Blog</h3> -->
         <a id="n5"><h3 class="h3s">Contacts</h3></a>
       </div>
-      <div id="flt">
-        <img src="https://images.unsplash.com/photo-1509817943730-519247f1dd94?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-      </div>
     </div>
   </nav>
 
 <!-- Abouts Page -->
-  <main id="a" class="col sect"> 
+  <main id="about" class="col sect"> 
      <header class="s-top" >
       <h2>About</h2>
       <p>Our expertise lies in understanding your unique business situation and translating that into an effective online experience</p>
@@ -105,14 +102,14 @@
         <p>Become more memorable by giving users an engaging experience</p>
       </div>
     </article>
-    <a class="but bt1" href="#e">Contact</a>
+    <a class="but bt1" href="#contact">Contact</a>
   </main> 
 
 <!-- How we work -->
   <article id="h" class="col sect">
       <h3>How we work</h3>
       <!--  <p class="sbt">We make Web Apps that solve your business problems</p> -->
-      <p>Depending on requirements the process takes anywhere between 5 days and 10 weeks.<br>At kick-off we will discuss your requirments in depth, including: technical components and design aesthetics, sources of media and content, and any constraints like budget or timing.</p>
+      <p class="pac">Depending on requirements the process takes anywhere between 5 days and 10 weeks.<br>At kick-off we will discuss your requirments in depth, including: technical components and design aesthetics, sources of media and content, and any constraints like budget or timing.</p>
     
     <img id="l" src="./media/l.png">
     <img id="r" src="./media/r.png">
@@ -154,14 +151,40 @@
         <p>We either iterate back to step 3, or gain your final approval and hit the switch to take your site live.</p>
       </div>
     </div>
+  </article>
 
-    <a class="but bt1" href="#e">Contact</a>
+  <article  id="t" class="col sect">
+    <h3>Our Toolbox</h3>
+      <p class="pac">Our technology stack and capabilities is line with modern industry standards so that we can offer you the best of web.</p>
+
+    <div class="row">
+      <div class="tcol">
+        <img class="t-img" src="./media/hcj.png">
+      </div>
+      <div class="tcol">
+        <img class="t-img" src="./media/bts.png">
+      </div>
+      <div class="tcol">
+        <img class="t-img" src="./media/npm.png">
+      </div>
+      <div class="tcol">
+        <img class="t-img" src="./media/rct.png">
+      </div>
+      <div class="tcol">
+        <img class="t-img" src="./media/nde.png">
+      </div>
+      <div class="tcol">
+        <img class="t-img" src="./media/git.png">
+      </div>
+    </div>
+
+    <a class="but bt1" href="#contact">Contact</a>
   </article>
  
   <div class="plx plx2"></div>
 
 <!-- Projects Page -->
-  <section id="b" class="col sect">
+  <section id="projects" class="col sect">
     <header class="s-top">
         <h2>Projects</h2>
         <p class="sbt">Click for more info</p>
@@ -173,17 +196,32 @@
 
     <article class="projgrd">
 
-      <!-- <div class="box" id="bx0">
-        <img class="smg" src="./media/a.png" alt="project-image">
+      <div class="box" id="bx0">
+        <img class="smg" src="./media/tdvm.jpg" alt="project-image">
         <a class="lnk col" href="#md0">
-          <h3 class="slb">label</h3>
+          <h3 class="slb">Restaurant</h3>
           <div class="sin"></div>
-          <p class="stp">type</p>
+          <p class="stp">Dynamic Brochure</p>
         </a>
-      </div> -->
+      </div>
+
+      <div id="md0"  class="modal-overlay">
+        <div class="modal-box">
+          <a href="#close" class="clse cmd">&times;</a>
+          <div class="col">
+            <h3>Trattoria Da Vinci</h3>
+            <p>The brief: Display the most important info prominantly; times, bookings number, and maps location. Otherwise keep it simple and to the point.</p>
+            <div class="smod" >
+              <img src="./media/tdvl.jpg" alt="project-image">
+            </div>
+            <p>Type: Dynamic Brochure (<a href="#close"><em>trattoriadavinci.co.za</em></a>)</p>
+            <a class="but" href="#close">Close</a>
+          </div>
+        </div>
+      </div>  
 
       <div class="box" id="bx1">
-        <img class="smg" src="./media/b.jpg" alt="project-image">
+        <img class="smg" src="./media/bscm.jpg" alt="project-image">
         <a class="lnk col" href="#md1">
           <h3 class="slb">Sciences Consultancy</h3>
           <div class="sin"></div>
@@ -198,7 +236,7 @@
             <h3>Baleta Earth Science</h3>
             <p>The brief: Update the old site to be more modern; SEO Optimised and include a dark theme. Use custom icons and re-create the contacts page to suit the business needs.</p>
             <div class="smod" >
-              <img src="./media/b.jpg" alt="project-image">
+              <img src="./media/bscl.jpg" alt="project-image">
             </div>
             <p>Type: Dynamic Brochure (<a href="#close"><em>baleta.org</em></a>)</p>
             <a class="but" href="#close">Close</a>
@@ -206,14 +244,29 @@
         </div>
       </div>  
 
-      <!-- <div class="box" id="bx2">
-        <img class="smg" src="./media/c.png" alt="project-image">
+      <div class="box" id="bx2">
+        <img class="smg" src="./media/cplm.jpg" alt="project-image">
         <a class="lnk col" href="#md2">
-          <h3 class="slb">label</h3>
+          <h3 class="slb">Commercial Plumber</h3>
           <div class="sin"></div>
-          <p class="stp">type</p>
+          <p class="stp">Dynamic Brochure</p>
         </a>
-      </div> -->
+      </div>
+
+      <div id="md2"  class="modal-overlay">
+        <div class="modal-box">
+          <a href="#close" class="clse cmd">&times;</a>
+          <div class="col">
+            <h3>Core Plumbing</h3>
+            <p>The brief: This site required minimal written content and a clear cta pointing to the bookings form.  </p>
+            <div class="smod" >
+              <img src="./media/cpll.jpg" alt="project-image">
+            </div>
+            <p>Type: Dynamic Brochure (<a href="#close"><em>coreplumbing.co.za</em></a>)</p>
+            <a class="but" href="#close">Close</a>
+          </div>
+        </div>
+      </div>  
 
       <div class="box" id="bx3">
         <img class="smg" src="./media/d.png" alt="project-image">
@@ -240,19 +293,19 @@
       </div>
     </article>
 
-    <a class="but bt1" href="#e">Contact</a>
+    <a class="but bt1" href="#contact">Contact</a>
   </section>
   <div class="plx plx2"></div>
 
 <!-- Pricing Page -->
-  <section id="c" class="col sect">
+  <section id="pricing" class="col sect">
     <header class="s-top" >
         <h2>Pricing</h2>
         <!-- <p class="sbt">This should give an idea of pricing, but we will guide you to the plan that best suites your needs and budget. We strongly believe that every business must be online, so don't hesitate to speak to us.</p> -->
         <p class="sbt">Please use the form below to tell us a little about your business and we will gladly advise on our pricing structure</p>
     </header>
 
-    <!-- <article class="pricegrd">
+    <article class="pricegrd">
       <section class="col pad pbox">
         <header class="prhd">
           <h3>Dynamic</h3>
@@ -296,6 +349,7 @@
         </ul>
         <a class="but bt1" href="#">Select</a>
       </section>
+
       <section class="col pad pbox">
         <header class="prhd">
           <h3>Custom</h3>
@@ -317,6 +371,7 @@
         </ul>
         <a class="but bt1" href="#">Select</a>
       </section>
+
       <section class="col pad pbox">
         <header class="prhd">
           <h3>Extras</h3>
@@ -343,31 +398,30 @@
         <a class="but bt1" href="#">Select</a>
       </section>
     </article>
-
-    <article class="col sect">
-      <h3>*Pricing Options</h3>
-      <p>These prices are a guideline and are subject to a final invoice. For example, most new websites will need domain registration as an extra and this will come as a seperate charge.</p>
-      <p>Before invoicing we will be sure to discuss the below payment options.</p>
-      <ol>
-        <li>Per month x 24 (or custom duration)</li>
-        <li>Stage gate down payments - especially for large projects</li>
-        <li>Deposit and Custom Down payments</li>
-        <li>All up front</li>
-      </ol>
-      <h3>FAQ's</h3>
-      <p>put some drop down revealers</p>
-
-      <h3>Unsure which option?</h3>
-      <p>Use the form to contact us and we will guide you to a solution that makes sense to your specific business needs.</p>--> 
-    <article class="col sect">
-      <a class="but bt1" href="#e">Contact</a>
-    </article>
-
   </section>
+  <article class="col sect">
+    <h3>*Pricing Options</h3>
+    <p class="pac">These prices are a guideline and are subject to a final invoice. For example, most new websites will need domain registration as an extra and this will come as a seperate charge.</p>
+    <p class="pac">Before invoicing we will be sure to discuss the below payment options.</p>
+    <ol>
+      <li>Per month x 24 (or custom duration)</li>
+      <li>Stage gate down payments - especially for large projects</li>
+      <li>Deposit and Custom Down payments</li>
+      <li>All up front</li>
+    </ol>
+    <!-- <h3>FAQ's</h3>
+    <p>put some drop down revealers</p> -->
+
+    <h3>Unsure which option?</h3>
+    <p class="pac">Use the form to contact us and we will guide you to a solution that makes sense to your specific business needs.</p> 
+
+    <a class="but bt1" href="#contact">Contact</a>
+  </article>
+
   <div class="plx plx2"></div>
 
 <!-- Blog Page -->
-  <!-- <section id="d" class="col sect">
+  <!-- <section id="blog" class="col sect">
     <header class="s-top" >
       <h2>Blog</h2>
       <p class="sbt">Some lekker blog posts can reside within this area</p>
@@ -379,7 +433,7 @@
   <div class="plx plx2"></div> -->
 
 <!-- Contacts Page -->
-  <section id="e" class="col sect">
+  <section id="contact" class="col sect">
     <header class="s-top" >
       <h2>Contact</h2>
       <p class="sbt"><em>Your best bet is to use the form to drop us a one-liner about your business from there we will arrange a call with you</em></p>
