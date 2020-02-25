@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><em>webStorm</em></title>
+  <title>webStorm</title>
   <link rel="icon" href="https://img.icons8.com/wired/64/000000/storm.png">
   <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   <meta charset="utf-8">
@@ -385,15 +385,16 @@
       <p class="sbt"><em>Your best bet is to use the form to drop us a one-liner about your business from there we will arrange a call with you</em></p>
     </header>
   	<article>
-     
-      <form method="post" action="form.php">
-        <input id="f1" class="entr" type="text" name="name" required="" placeholder="Your Name*">
-        <input id="f2" class="entr" type="tel" name="number" placeholder="Your Phone*">
-        <input id="f3" class="entr" type="email" name="email" placeholder="Your Email*">
-        <textarea id="f4" class="entr" type="text" name="message" placeholder="Your Message*" rows="4" autocomplete="off"></textarea>
+   
+      <form method="POST" action="MAILTO:phfatm@gnail.com" enctype="text/plain">
+        <input id="f1" class="entr" type="text" name="name" required="" placeholder="Your Name*" autocomplete="off">
+        <input id="f2" class="entr" type="tel" name="number" minlength="10" required="" placeholder="Your Phone*" autocomplete="off">
+        <input id="f3" class="entr" type="email" name="email" required="" placeholder="Your Email*" autocomplete="off">
+        <textarea id="f4" class="entr" type="text" name="message" required="" placeholder="Your Message*" rows="4" autocomplete="off"></textarea>
         <a id="f5" class="but" type="submit" name="submit">Send It!</a>
         <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdwBtoUAAAAAGGWhUPa7t0uuJMjyOZvGIwxqiSO"></div>
       </form>
+     
     </article>
   </section>
 
