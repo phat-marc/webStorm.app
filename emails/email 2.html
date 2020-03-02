@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			body {display: flex;  justify-content: center;}
+
+			.fl {display: flex;}
+			.rw {flex-direction: row; }
+			.cl {flex-direction: column; justify-content: center;}
+
+			main {
+				/*z-index: 1;*/
+				position: relative;
+				width: 600px;
+				border: 2px solid white;
+        padding: 2em 1em;
+			}
+
+			main::before {
+				z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+				content: "";
+				border-radius: 10px;
+				background-image: url(https://bit.ly/2vdlyD8);
+				background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+	      filter: opacity(.5) blur(2px);
+			}
+
+			form {
+				min-height: 800px;
+				border: 2px solid purple;
+			}
+
+			.br {border-radius: 5px;}
+
+			h1, h2 {text-align: center;}
+
+			p, input	{margin: 1em;}
+			input, em {color: maroon; font-style: italic;}
+
+		</style>
+	</head>
+	<body>
+		<main class="br">
+			<img src="">
+			<header>
+				<h1>Fancy Title</h1>
+				<p>If you would prefer to do this over the phone, just fill out the <em>required*</em> bits and press this button:</p>
+				<button class="br"><a href="">Call Me!</a></button>
+			</header>
+			<form class="br">
+				<h2>Tell us about yourself</h2>
+				<div class="fl rw">
+					<div class="fl rw">
+						<p>Name:</p><input class="br" type="" name="name" placeholder="required*" required>
+					</div>
+					<div class="fl rw">
+						<p>Surname:</p><input class="br" type="" name="surname">
+					</div>
+				</div>
+				<div class="fl rw">
+					<div class="fl rw">
+						<p>Tel:</p><input class="br" type="Tel" name="tel" placeholder="required*" required>
+					</div>
+					<div class="fl rw">
+						<p>Email:</p><input class="br" type="" name="email" placeholder="required*" required>
+					</div>
+				</div>
+				<div class="fl rw">
+					<div class="fl rw">
+						<p>Job Title:</p><input class="br" type="" name="title">
+					</div>
+				</div>
+				<h2>Tell us about your business</h2>
+				<div class="fl rw">
+					<div class="fl cl">
+						<p>Business Name:</p>
+					</div>
+					<div class="fl cl">
+						<input class="br" type="" name="name">
+					</div>
+				</div>
+				<div class="fl rw">
+					<div class="fl cl">
+						<p>Industry:</p>
+					</div>
+					<div class="fl cl">
+						<input class="br" type="" name="name">
+					</div>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>	
