@@ -1,105 +1,66 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title></title>
+		<title>webStorm.app/hello</title>
 	</head>
-	<body style="background-color: rgba(5,5,5,.1);">
-		<form action="https://submit-form.com/Q6AP4Ge0kdkNjJ-8hWtES" target="self">
-			<table style="min-width: 360px; max-width:440px; margin: 0 auto; border-collapse: collapse; border-radius:5px; background-color:#0D0D0D; color:#f8f8ff; opacity: .9; letter-spacing: .1rem; line-height: 1.2rem;">
+	<body style="background-color:rgba(5,5,5,.1);">
+		<form action="https://submit-form.com/Q6AP4Ge0kdkNjJ-8hWtES"target="self">
+			<table style="min-width:360px;max-width:440px;margin:0 auto;border-collapse:collapse;border-radius:5px;background-color:#0D0D0D;color:#f8f8ff;opacity: .9;letter-spacing:.1rem;line-height:1.2rem;">
 				<thead> 
 					<tr><th colspan="2"><h1>Let's get started</h1></th></tr>
-					<tr><td><p style="margin:.5em 0; padding:0 1em; font-size:14px;">You selected:</p></td></tr>
-					<tr>
-						<td colspan="2" style="text-align: justify;"><p style="margin:.5em 1em; font-size:14px;">Hi there, we are super excited to get cracking on your new project. So please take a moment to introduce yourself to us and a representative will be in touch to help brainstorm your ideas and formulate a game plan with you.</p></td>
-					</tr>
+					<tr><td><p style="margin:.5em 0;padding:0 1em;font-size:14px;">You selected:</p></td></tr>
+					<tr><td colspan="2" style="text-align:justify;"><p style="margin:.5em 1em;font-size:14px;">Hi there, we are super excited to get cracking on your new project. So please take a moment to introduce yourself to us and a representative will be in touch to help brainstorm your ideas and formulate a game plan with you.</p></td></tr>
 				</thead>
-				
 				<tbody>
+					<tr><h2>Tell us about yourself</h2></th></tr>
 					<tr>
-						<th colspan="2" style="text-align: center;">
-							<h2>Tell us about yourself</h2>
-						</th>
+						<th><p style="text-align:left;margin:.5em 1em">Name*</p></th>
+						<th><p style="text-align:left;margin:.5em 1em">Job Title</p></th>
 					</tr>
 					<tr>
-						<th><p style="text-align: left; margin:.5em 1em">Name*</p></th>
-						<th><p style="text-align: left; margin:.5em 1em">Job Title</p></th>
+						<td><input style="margin:0 1em .5em 1em"type="text"name="name" placeholder="Required*"required></td>
+						<td><input style="margin:0 1em .5em 1em"type="text"name="title"></td>
 					</tr>
 					<tr>
-						<td>
-							<input style="margin:0 1em .5em 1em" type="text" name="name" placeholder="Required*" required>
-						</td>
-						<td>
-							<input style="margin:0 1em .5em 1em" type="text" name="title">
-							<!-- <select style="margin:0 1em .5em 1em" name="title">
-								<option value="Not Selected">Select</option>
-								<option value="Owner">Owner</option>
-								<option value="Senior Manager">Senior Manager</option>
-								<option value="Junior Manager">Junior Manager</option>
-								<option value="Scholar">Scholar</option>
-								<option value="Individual">Individual</option>
-							</select> -->
-						</td>
-					</tr>
-					<tr>
-						<th><p style="text-align: left; margin:.5em 1em">Tel*</p></th>
-						<th><p style="text-align: left; margin:.5em 1em">Email*</p></th>
+						<th><p style="text-align:left;margin:.5em 1em">Tel*</p></th>
+						<th><p style="text-align:left;margin:.5em 1em">Email*</p></th>
 					</tr>
 					<tr>	
-						<td>
-							<input style="margin:0 1em .5em 1em" type="Tel" name="tel" placeholder="Required*" required>
-						</td>
-						<td>
-							<input style="margin:0 1em .5em 1em" type="" name="email" placeholder="Required*" required>
-						</td>
+						<td><input style="margin:0 1em .5em 1em"type="Tel"name="tel"placeholder="Required*"required></td>
+						<td><input style="margin:0 1em .5em 1em"type="email"name="email" placeholder="Required*"required></td>
 					</tr>
 					<tr>
 						<td colspan="2">
 							<p style="margin:.5em 1em">I prefer that you:</p>
-							<input style="margin-left:1em" type="radio" id="call" name="website" value="call">
+							<input style="margin-left:1em"type="radio"id="call"name="website"value="call">
 							<label for="website">Call me</label>
-							<input type="radio" id="mail" name="website" value="mail">
+							<input type="radio"id="mail"name="website"value="mail"required>
 							<label for="website">Email me</label>
 						</td>
 					</tr>
-
 					<tr style="height:20px;"></tr>
-					<tr>
-						<th colspan="2" style="text-align: center;">
-						<h2>Tell us about your business</h2>
-					</th>
-					</tr>
-					<tr>
-						<th><p style="text-align: left; margin:.5em 1em">Business Name</p></th>
-						<th><p style="text-align: left; margin:.5em 1em">Industry</p></th>
-					</tr>
-					<tr>
-						<td><input style="margin:0 1em .5em 1em" type="text" name="name"></td>
-						<td><input style="margin:0 1em .5em 1em" type="text" name="title"></td>
-					</tr>
-					
-					<tr style="height:20px;"></tr>
-					<tr>
-						<th colspan="2" style="text-align: left; padding-left: 1em;">Briefly describe your business:</th> 
-					</tr>
-					<tr>
-						<td colspan="2" >
-							<textarea style="width:90%; margin:.5em 1.25em;" name="description" rows="4" maxlength="280"></textarea>
-						</td>
-					</tr>
-
-					<tr style="height:20px;"></tr>
-					<tr>
-						<td colspan="2" style="text-align: center;"><a style="margin:1em 0; padding: .5em 1.5em; border-radius: 5px; background-color:#d8021b; text-decoration: none; color:#f8f8ff;" href="">Let's Go!</a></td>
-					</tr>
-					<tr style="height:20px;"></tr>
-				</tbody>
-
-				<tfoot>
-					<tr>
-						<th colspan="4">
-							<img style="width:350px; padding:5px;" src="https://webstorm.app/media/WSlogo.png">
+						<tr>
+							<th colspan="2"style="text-align:center;">
+							<h2>Tell us about your business</h2>
 						</th>
 					</tr>
+					<tr>
+						<th><p style="text-align:left;margin:.5em 1em">Business Name</p></th>
+						<th><p style="text-align:left;margin:.5em 1em">Industry</p></th>
+					</tr>
+					<tr>
+						<td><input style="margin:0 1em .5em 1em"type="text"name="name"></td>
+						<td><input style="margin:0 1em .5em 1em"type="text"name="title"></td>
+					</tr>
+					<tr style="height:20px;"></tr>
+					<tr><th colspan="2"style="text-align:left;padding-left:1em;">Briefly describe your business:</th></tr>
+					<tr><td colspan="2"><textarea style="width:90%;margin:.5em 1.25em;"name="description"rows="4"maxlength="280"></textarea></td></tr>
+					<tr style="height:20px;"></tr>
+					<tr><td colspan="2"style="text-align:center;"><input style="margin:1em 0; padding:.5em 1.5em;border:none;border-radius:5px;background-color:#d8021b;color:#f8f8ff;letter-spacing:.1rem;"type="submit"name="submit" value="Let's Go!"></input></td></tr>
+					<tr style="height:20px;"></tr>
+				</tbody>
+				<tfoot>
+					<tr><th colspan="4"><img style="width:350px;padding:5px;"src="https://webstorm.app/media/WSlogo.png"></th></tr>
 				</tfoot>
 			</table>
 		</form>
