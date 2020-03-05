@@ -59,6 +59,7 @@
         max-width: 650px;
         /*color: #c6c6cc;*/
         color: #f8f8ff;
+        font-size: .9em;
         opacity: .95;
     }
 
@@ -120,7 +121,7 @@
     }
 
     .pad {
-        margin: 1em auto;
+        margin: 6em auto;
         max-width: 90%;
         min-width: 200px;
         overflow-y: auto;
@@ -198,6 +199,7 @@
         #home {padding: 0 4vw;}
         .pricegrd {grid-template-columns: repeat(2, 1fr);}  
         .modal-box {max-width:600px; margin: 0;}
+        .t-img {max-width: 200px; max-height: 125px;}
         
         form {
             grid-template-columns: 1fr 1fr;
@@ -378,15 +380,16 @@
         grid-template-columns: repeat(6, 1fr);
         -ms-overflow-style: none;
     }
-
     #hgrd::-webkit-scrollbar {display: none;}
+
     .pbox>div>.i-img  {opacity: .65;}
     .pbox>div>.i-img:hover {opacity: 1;}
 
     .t-img {
+        display: flex;
         margin: 1em;
-        max-width: 200px;
-        max-height: 125px;
+        max-width: 140px;
+        max-height: 90px;
     }
 
     .tcol {
@@ -395,12 +398,14 @@
         margin: 2em auto;
         align-items: center;
     }
+
+    #t > div.row {flex-wrap: wrap;}
 /*Projects Page*/
     .projgrd {
         display: flex;
         justify-content: center;
-        margin: 1em;
         flex-wrap: wrap;
+        margin: 1em;
     }
 
     .clse.cmd {position: absolute; right: 100px;}
