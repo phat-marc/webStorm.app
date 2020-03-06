@@ -1,0 +1,274 @@
+/*Abouts Page*/
+    .gri {
+        margin: .5em 1.5em;
+        text-shadow: 0 0 2px #112541;
+        background-color: rgba(17, 37, 65, 0.5);
+        border-radius: 5px;
+        box-shadow: 3px 4px 5px rgba(0,0,0,.25);
+        z-index: 2;
+    }
+
+    #grd1 > .gri > p {text-align: right;}
+    #grd2 > .gri > p {text-align: left;}
+    .i-img {padding: 1em; margin: 0 auto;}
+
+    #pnl1, #pnl2 {
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        min-height: 100%;
+        box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+        background-position: 25% 50%;
+        background-size: cover;
+        filter: brightness(.7) opacity(.85);
+    }
+
+    #pnl1 {background-image:url(https://bit.ly/2ImTobP);}
+    #pnl2 {background-image:url(https://bit.ly/2wgGr0n);}
+/*HWW Page*/
+    #h {position: relative;}
+
+    #l, #r {
+        margin: .5em;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        width: 32px;
+        cursor: pointer;
+    }
+    #l {left: 0;} #r {right: 0;}
+
+    #hgrd {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        -ms-overflow-style: none;
+    }
+    #hgrd::-webkit-scrollbar {display: none;}
+
+    .pbox>div>.i-img  {opacity: .65;}
+    .pbox>div>.i-img:hover {opacity: 1;}
+
+    .t-img {
+        display: flex;
+        margin: 1em;
+        max-width: 140px;
+        max-height: 90px;
+    }
+
+    .tcol {
+        display: flex;
+        justify-content: center;
+        margin: 2em auto;
+        align-items: center;
+    }
+
+    #t > div.row {flex-wrap: wrap;}
+/*Projects Page*/
+    .projgrd {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 1em;
+    }
+
+    .clse.cmd {position: absolute; right: 100px;}
+
+    .box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        overflow: hidden;
+    }
+
+    .smg {
+        filter: brightness(50%);
+        height: 350px;
+        transform: scale(1);
+        transition: all .25s ease-in;
+    }
+
+    .smod {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .emg {
+        filter: brightness(80%) blur(2.5px);
+        height: 350px;
+        transform: scale(1.1);
+        transition: all .25s ease-out;
+    }
+
+    .lnk {
+        z-index: 2;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;        
+    }
+
+    .slb {
+        transform: translateY(-150px);
+        transition: all .25s ease-in;
+    }
+
+    .sin {
+        z-index: 1;
+        margin: 10px;
+        width: 64px;
+        height: 64px;
+        filter: opacity(0);
+        background-image: url(https://img.icons8.com/wired/64/000000/rain.png);
+        transition: background-image 1s ease-in;
+    }
+
+    .ein{
+        filter: invert(.99) opacity(1);
+        transition: filter .5s ease-in;
+    }
+
+    .ein:hover {
+        filter: invert(0) opacity(.90);
+        background-image: url(https://img.icons8.com/dusk/64/000000/storm.png);
+    }
+
+    .elb {
+        transform: translateY(0);
+        transition: all .25s ease-out;
+    }
+
+    .stp {
+        transform: translateY(150px);
+        transition: all .25s ease-out;
+    }
+    .etp {
+        transform: translateY(0);
+        transition: all .25s ease-out;
+    }
+
+    @keyframes pop {
+        from {top:100px;opacity: 0;}
+        to {top:0px;opacity:1;}
+    }
+
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 5;
+    }
+
+    .modal-overlay:target {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-box {
+        display: block;
+        position: relative;
+        max-height: 400px;
+        width: 600px;
+        overflow-y: scroll;
+        padding: 4em 1em;
+        background: linear-gradient(to bottom, #20002c, #cbb4d4); 
+        box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.2);
+        animation-name: pop;
+        animation-duration: 0.5s;
+    }
+/*Pricing Page*/
+    .pbox {
+        padding: 1em;
+        min-width: 200px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+
+    section.pbox:hover {
+        border: 1px solid purple;
+        transform: scale(1.05) translateY(-25px);
+    }
+
+    .prhd {min-height: 300px;}
+    .prhd > h3 {margin: 1.5em auto;}
+    .prhd > .but {align-self: flex-end; margin: 0;}
+    .pm {margin:0;}
+    .pb {font-size: 4em; margin: 0;}
+
+    ul, ol {
+        align-self: left;
+        margin: 1em;
+        padding-left: 0;
+        color: #f8f8ff;
+        opacity: .75;
+    }
+
+    ol {padding: 2em;}
+    ul + .but {margin-top: auto;}
+    ul > p {margin: 1em;}
+
+    ul > li {
+        margin: .5em;
+        padding-left: 2em;
+        list-style: none;
+        text-align: left;
+        text-indent: -2em;
+    }
+
+    ul > li:before {content: "+"; padding-right: 2em;}
+/*Contacts Page*/
+    .entr {
+        margin: 10px;
+        padding: 10px;
+        max-width: 300px;
+        border-radius: 5px;
+        background-color: #B0C4DE;
+        font-family: 'Roboto Mono', monospace;
+        font-size: .9em;
+        opacity: .6;
+    }
+/*Footer Section of Contacts Page*/
+    footer {
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        min-height: 100px;
+        background-color: #111;
+        opacity: .5;
+    }
+    footer p {font-size: .8em;}
+    footer > div {justify-content: center;}
+
+    .ficon {
+        margin: .5em .9em;
+        height: 16px;
+        width: 16px;
+        overflow: hidden;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, .5);
+    }
+    .ficon:hover {filter: opacity(.5);}
+/*Put this at bottom.
+    PICS Photo by Johannes Plenio on Unsplash https://unsplash.com/photos/2QUvkQTBh5s
+    ICONS <a href="https://icons8.com/icon/66000/secure">Secure icon by Icons8</a>
+    style='background-image: url("https://irp-cdn.multiscreensite.com/e48fec65/dms3rep/multi/desktop/content_23_img1_2x.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;'
+    *Icons color #3bccd9 #3bd997*/

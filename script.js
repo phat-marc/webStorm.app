@@ -1,84 +1,28 @@
 // Scroll Header
-  function scrollBanner() {
-    let scrollPos;
-    let head = document.querySelector('#home');
-    let butt = document.querySelector('#home > p');
+  // function scrollBanner() {
+  //   let scrollPos;
+  //   let head = document.querySelector('#home');
+  //   let butt = document.querySelector('#home > p');
     
-    scrollPos = window.scrollY;
+  //   scrollPos = window.scrollY;
 
-    if (scrollPos <= 600) {
-      head.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
-      head.style.opacity = 1 - (scrollPos / 600);
-      butt.style.transform = "translateY(" + (-scrollPos / 2) + "px" + ")";
-      butt.style.opacity = 1 - (scrollPos / 600);
-    }
-  }
-  window.addEventListener('scroll', scrollBanner);
+  //   if (scrollPos <= 600) {
+  //     head.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
+  //     head.style.opacity = 1 - (scrollPos / 600);
+  //     butt.style.transform = "translateY(" + (-scrollPos / 2) + "px" + ")";
+  //     butt.style.opacity = 1 - (scrollPos / 600);
+  //   }
+  // }
+  // window.addEventListener('scroll', scrollBanner);
 
-  // or this
-  setTimeout(function(){var rellax = new Rellax('.rellax')},50);
+  // // or this
+  // setTimeout(function(){var rellax = new Rellax('.rellax')},50);
 
-  window.addEventListener('scroll', function(){
-    document.querySelector('.img').style.opacity = (1 - window.scrollY / (window.innerHeight * 0.75)) * 0.5;
-    document.querySelector('.img img').style.filter = `blur(${(window.scrollY / (window.innerHeight * 0.75)) * 5}px)`;
-  });
-// Typewriter
-  let TxtType = function(el, toRotate, period) {
-  	this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 8) || 1000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-  };
+  // window.addEventListener('scroll', function(){
+  //   document.querySelector('.img').style.opacity = (1 - window.scrollY / (window.innerHeight * 0.75)) * 0.5;
+  //   document.querySelector('.img img').style.filter = `blur(${(window.scrollY / (window.innerHeight * 0.75)) * 5}px)`;
+  // });
 
-  TxtType.prototype.tick = function() {
-  	let i = this.loopNum % this.toRotate.length;
-    let fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-    	this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    	this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-  	
-  	this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  	let that = this;
-  	let delta = 200 - Math.random() * 100;
-
-  	if (this.isDeleting) { delta /= 5; }
-
-  	if (!this.isDeleting && this.txt === fullTxt) {
-  		delta = this.period;
-  	  this.isDeleting = true;
-  	} else if (this.isDeleting && this.txt === '') {
-  		this.isDeleting = false;
-  		this.loopNum++;
-  		delta = 500;
-  	}
-
-  	setTimeout(function() {
-  		that.tick();
-  	}, delta);
-  };
-
-  window.onload = function() {
-  	let elements = document.getElementsByClassName('typewrite');
-  	for (let i=0; i<elements.length; i++) {
-  		let toRotate = elements[i].getAttribute('data-type');
-  		let period = elements[i].getAttribute('data-period');
-  		if (toRotate) {
-  			new TxtType(elements[i], JSON.parse(toRotate), period);
-  	}
-  }
-
-  let css = document.createElement("style");
-  	css.type = "text/css";
-  	css.textContent = ".typewrite > .wrap { border-right: 0.2em solid #fff }";
-  	document.body.appendChild(css);
-  };
 
 // About actions
   // let panela = document.querySelector('#pnl1');
