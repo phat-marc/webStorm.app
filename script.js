@@ -159,6 +159,22 @@
   bxc.addEventListener('mouseleave', rsc);
   bxc.addEventListener('mouseenter', asc);
 
+  let bxe = document.querySelector('#bx4');
+  function ase() {
+    this.children[0].classList.add('emg');
+    this.children[1].children[0].classList.add('elb');
+    this.children[1].children[1].classList.add('ein');
+    this.children[1].children[2].classList.add('etp');
+  }
+  function rse() {
+    this.children[0].classList.remove('emg');
+    this.children[1].children[0].classList.remove('elb');
+    this.children[1].children[1].classList.remove('ein');
+    this.children[1].children[2].classList.remove('etp');
+  }
+  bxe.addEventListener('mouseleave', rse);
+  bxe.addEventListener('mouseenter', ase);
+
   let bxd = document.querySelector('#bx3');
   function asd() {
     this.children[0].classList.add('emg');
@@ -174,3 +190,19 @@
   }
   bxd.addEventListener('mouseleave', rsd);
   bxd.addEventListener('mouseenter', asd);
+
+  let bxf = document.querySelector('#bx5');
+  function asf() {
+    this.children[0].classList.add('emg');
+    this.children[1].children[0].classList.add('elb');
+    this.children[1].children[1].classList.add('ein');
+    this.children[1].children[2].classList.add('etp');
+  }
+  function rsf() {
+    this.children[0].classList.remove('emg');
+    this.children[1].children[0].classList.remove('elb');
+    this.children[1].children[1].classList.remove('ein');
+    this.children[1].children[2].classList.remove('etp');
+  }
+  bxf.addEventListener('mouseleave', rsf);
+  bxf.addEventListener('mouseenter', asf);
