@@ -260,12 +260,10 @@
         #l, #r {opacity: 0;}
     } 
     
-    /*Turn this on if trouble with mobile
+    Turn this on if trouble with mobile
         @media only screen and (max-device-width: 1366px) {
-          .parallax {
-            background-attachment: scroll;
-          }
-        }*/
+          .parallax {background-attachment: scroll;}
+        }
 /*Navigation page*/
     nav {
         z-index: 3;
